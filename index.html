@@ -10,6 +10,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -19,42 +20,31 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div>
-                        <form ng-submit="todoAdd()">
+                    <form ng-submit="todoAdd()">
 
-                            <div class="card">
-                                <h5 class="card-header bg-primary text-white" id="cardheaderTitle">Task Manager <input
-                                        type="submit" class="btn btn-danger float-right" value="+ ADD New Task "> </h5>
+                        <div class="card">
+                            <!-- <h5 class="card-header bg-primary text-white" id="cardheaderTitle">Task Manager <input
+                                        type="submit" class="btn btn-danger float-right" value="+ ADD New Task "> </h5> -->
+                            <div class="card-header bg-primary text-white" id="cardheaderTitle">
+                                <i class="fa fa-list fa-1x fa-spin" aria-hidden="true"></i>
+                                TASK MANAGER
+                                <input type="submit" class="btn btn-danger float-right" value="+ ADD New Task ">
+                            </div>
 
-
-
-                                <div class="card-body">
-
-                                    <!-- <form ng-submit="todoAdd()"> -->
-                                    <input type="text" ng-model="inPut">
-                                    <input type="submit" value="Add New Task">
-
-                                    <!-- </form> -->
-
-
-
-
-
-
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" required>
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-danger" required><i class="fa fa-plus"
+                                                aria-hidden="true"></i>&nbsp;Add New Task</button>
+                                    </div>
                                 </div>
-                        </form>
-
-
-
-
-                    </div>
-
+                                
+                            </div>
+                        </div>
+                    </form>
                 </div>
-
-
             </div>
-
-        </div>
         </div>
 
 
